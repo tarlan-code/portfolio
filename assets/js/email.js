@@ -10,11 +10,11 @@ window.onload = function () {
 
 
         //Verify reCAPTCHA response
-        const captchaResponse = grecaptcha.getResponse();
-        if (!captchaResponse) {
-            alert('Please complete the reCAPTCHA.');
-            return;
-        }
+        // const captchaResponse = grecaptcha.getResponse();
+        // if (!captchaResponse) {
+        //     alert('Please complete the reCAPTCHA.');
+        //     return;
+        // }
 
 
         // generate a five digit number for the contact_number variable
