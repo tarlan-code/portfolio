@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
     <link rel="stylesheet" href="assets/css/vendor/aos.css">
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stylecustom.css">
 </head>
 
 <body class="template-color-1 spybody" data-spy="scroll" data-bs-target=".navbar-example2" data-offset="150">
@@ -923,7 +925,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sl-9 col-12 mt_sm--20 col-lg-9 col-md-6 col-sm-6 col-12">
+                <div class="col-sl-9 col-12 mt_sm--20 col-lg-9 col-md-6 col-sm-6 col-12 " id="contact-form-div">
                     <div class="section-title text-center">
                         <span class="subtitle">Contact With Me</span>
                     </div>
@@ -933,7 +935,7 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="contact-name">Your Fullname</label>
-                                <input class="form-control form-control-lg" name="user_name" id="contact-name"
+                                <input class="form-control form-control-lg" required name="user_name" id="contact-name"
                                     type="text">
                             </div>
                         </div>
@@ -941,22 +943,22 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="contact-email">Email</label>
-                                <input class="form-control form-control-sm" id="contact-email" name="user_email"
+                                <input class="form-control form-control-sm" required  id="contact-email" name="user_email"
                                     type="email">
                             </div>
                         </div>
 
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label for="subject">subject</label>
-                                <input class="form-control form-control-sm" id="subject" name="subject" type="text">
+                                <label for="subject">Subject</label>
+                                <input class="form-control form-control-sm" required id="subject" name="subject" type="text">
                             </div>
                         </div>
 
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label for="contact-message">Your Message</label>
-                                <textarea name="message" id="contact-message"></textarea>
+                                <textarea name="message" required id="contact-message"></textarea>
                             </div>
                         </div>
                         <div class="g-recaptcha mb-3" data-sitekey="6LfwoIUnAAAAAJAvVKKSJXqG5l5J7gcZfTgOyBVT"></div>

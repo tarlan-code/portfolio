@@ -414,11 +414,11 @@
 
             location.hash = emoji;
 
-            setTimeout(loop, 50);
+            setTimeout(loop, 2000);
         }
 
         loop();
     }
 
-    //SetEmojis()
+    SetEmojis()
 })(jQuery, window)
