@@ -10,17 +10,19 @@ window.onload = function () {
 
 
         //Verify reCAPTCHA response
-        // const captchaResponse = grecaptcha.getResponse();
-        // if (!captchaResponse) {
-        //     alert('Please complete the reCAPTCHA.');
-        //     return;
-        // }
+        const captchaResponse = grecaptcha.getResponse();
+        if (!captchaResponse) {
+            alert('Please complete the reCAPTCHA.');
+            return;
+        }
 
 
         // generate a five digit number for the contact_number variable
         this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
-        emailjs.sendForm('service_68mpgj4', 'template_egb4yf9', this)
+        emailjs.sendForm('service_68mpgj4', 'template_egb4yf9',{
+            'g-recaptcha-response' : captchaResponse
+        }, this)
             .then(function (response) {
                 console.log('SUCCESS!',response);
                 $('#contact-form-div').html(`
