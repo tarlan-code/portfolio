@@ -923,16 +923,17 @@
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="col-sl-9 col-12 mt_sm--20 col-lg-9 col-md-6 col-sm-6 col-12">
+                <div class="col-sl-9 col-12 mt_sm--20 col-lg-9 col-md-6 col-sm-6 col-12">
                     <div class="section-title text-center">
                         <span class="subtitle">Contact With Me</span>
                     </div>
-                    <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST">
 
+                    <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form">
+                        <input type="hidden" name="contact_number">
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="contact-name">Your Fullname</label>
-                                <input class="form-control form-control-lg" name="contact-name" id="contact-name"
+                                <input class="form-control form-control-lg" name="user_name" id="contact-name"
                                     type="text">
                             </div>
                         </div>
@@ -940,7 +941,7 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="contact-email">Email</label>
-                                <input class="form-control form-control-sm" id="contact-email" name="contact-email"
+                                <input class="form-control form-control-sm" id="contact-email" name="user_email"
                                     type="email">
                             </div>
                         </div>
@@ -955,9 +956,10 @@
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label for="contact-message">Your Message</label>
-                                <textarea name="contact-message" id="contact-message"></textarea>
+                                <textarea name="message" id="contact-message"></textarea>
                             </div>
                         </div>
+                        <div class="g-recaptcha" data-sitekey="6LfwoIUnAAAAAJAvVKKSJXqG5l5J7gcZfTgOyBVT"></div>
 
                         <div class="col-lg-12">
                             <button name="submit" type="submit" id="submit" class="rn-btn">
@@ -966,15 +968,17 @@
                             </button>
                         </div>
                     </form>
-                </div> -->
+
+                </div>
             </div>
         </div>
         <div class="copyright text-center ptb--40 section-separator">
-            <p class="description">© 2022</p>
+            <p class="description">2022</p>
         </div>
     </div>
     <!-- Rn contacts area end -->
     <!-- JS ============================================ -->
+
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/modernizer.min.js"></script>
     <script src="assets/js/vendor/feather.min.js"></script>
@@ -985,8 +989,14 @@
     <script src="assets/js/vendor/aos.js"></script>
     <script src="assets/js/vendor/particles.js"></script>
     <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="./assets/js/api.js"></script>
+    <script src="./assets/js/email.js"></script>
+
+
 </body>
 
 </html>
