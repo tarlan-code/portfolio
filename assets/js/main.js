@@ -421,4 +421,8 @@
     }
 
     SetEmojis()
+
+    var currentYear = new Date().getFullYear();
+    $(".footer-year").text(currentYear);
+
 })(jQuery, window)
