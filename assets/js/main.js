@@ -425,4 +425,12 @@
     var currentYear = new Date().getFullYear();
     $(".footer-year").text(currentYear);
 
+    var referrer = document.referrer;
+
+    if (referrer) {
+        console.log("Referrer URL:", referrer);
+    } else {
+        console.log("No referrer URL available.");
+    }
+
 })(jQuery, window)
